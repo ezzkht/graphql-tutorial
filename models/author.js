@@ -9,3 +9,7 @@ const authorSchema = new schema({
   age: Number,
   books: [String]
 });
+
+const model = mongoose.model('author', authorSchema);
+
+export default model;
